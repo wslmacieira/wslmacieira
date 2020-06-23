@@ -4,7 +4,7 @@
  * Description: Elementor Pro brings a whole new design experience to WordPress. Customize your entire theme: header, footer, single post, archive and 404 page, all with one page builder.
  * Plugin URI: https://elementor.com/
  * Author: Elementor.com
- * Version: 2.9.4
+ * Version: 2.10.2
  * Author URI: https://elementor.com/
  *
  * Text Domain: elementor-pro
@@ -13,12 +13,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
 update_option( 'elementor_pro_license_key', 'activated' );
 set_transient( 'elementor_pro_license_data', [ 'license' => 'valid', 'expires' => '01.01.2030' ] );
 set_transient( 'timeout_elementor_pro_license_data', 1893456000 );
-define( 'ELEMENTOR_PRO_VERSION', '2.9.4' );
-define( 'ELEMENTOR_PRO_PREVIOUS_STABLE_VERSION', '2.8.5' );
+define( 'ELEMENTOR_PRO_VERSION', '2.10.2' );
+define( 'ELEMENTOR_PRO_PREVIOUS_STABLE_VERSION', '2.9.5' );
 
 define( 'ELEMENTOR_PRO__FILE__', __FILE__ );
 define( 'ELEMENTOR_PRO_PLUGIN_BASE', plugin_basename( ELEMENTOR_PRO__FILE__ ) );
@@ -28,7 +27,7 @@ define( 'ELEMENTOR_PRO_MODULES_PATH', ELEMENTOR_PRO_PATH . 'modules/' );
 define( 'ELEMENTOR_PRO_URL', plugins_url( '/', ELEMENTOR_PRO__FILE__ ) );
 define( 'ELEMENTOR_PRO_ASSETS_URL', ELEMENTOR_PRO_URL . 'assets/' );
 define( 'ELEMENTOR_PRO_MODULES_URL', ELEMENTOR_PRO_URL . 'modules/' );
-
+update_option( 'elementor_pro_license_key','GenesisforWP');
 /**
  * Load gettext translate for our text domain.
  *
